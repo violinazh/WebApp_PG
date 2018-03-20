@@ -139,7 +139,7 @@ function light() {
 	   	window.addEventListener("devicelight", handleLightE);
 
 	} else { // API not supported
-	  	document.getElementById('light').innerHTML = "There is no ambient light sensor.";
+	  	document.getElementById('light').innerHTML = "Ambient light sensor API not supported.";
 	}
 
 }

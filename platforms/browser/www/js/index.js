@@ -194,14 +194,6 @@ function initialize() {
 
 // Event received. We may now use PhoneGap APIs.
 function onDeviceReady() {
-	var parentElement = document.getElementById('someContent');
-	
-	var listeningElement = parentElement.querySelector('.listening');
-	var receivedElement = parentElement.querySelector('.received');
-	
-	listeningElement.setAttribute('style', 'display:none;');
-	receivedElement.setAttribute('style', 'display:block;');
 
-	console.log('Received Events: ' + 'deviceready');
 }
 
