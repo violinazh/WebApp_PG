@@ -2,14 +2,10 @@
 var minRange = 30; //35
 var maxRange = 50; //45
 
-// Variables for the range of good position for reading in landscape
-var minRange = 30; //35
-var maxRange = 50; //45
-
 // Variable for the range of light
 var lightRange = 100
 
-// Variable for the interval
+// Variable for the time interval
 var interval;
 
 var seconds = 0;
@@ -120,7 +116,7 @@ function handlePosE(event) {
 
 			if (window.matchMedia("(orientation: landscape)").matches) { // Detecting landscape mode
 				document.getElementById('debug').innerHTML = "Gamma value = " + y;
-		   		if ((y > -30 || y < -50)) { // Here we handle the wrong position event ??? for 30 and 50
+		   		if ((y > -minRange || y < -maxRange)) { // Here we handle the wrong position event ??? for 30 and 50
 					document.getElementById('output').innerHTML  = "Wrong position!";
 					document.getElementById('output').style.color = "red";
 				} else {
